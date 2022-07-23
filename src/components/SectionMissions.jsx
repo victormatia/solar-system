@@ -5,16 +5,17 @@ import MissionCard from './MissionCard';
 class SectionMissions extends React.Component {
   render() {
     return (
-      <section>
+      <section className="section-missions">
         {missions.map((mission, i) => {
-          const { name, year, country, destination } = mission;
+          const { name, year, country, destination, photo } = mission;
           return (
             <div key={ i }>
               <MissionCard
                 name={ name }
                 year={ year }
-                contry={ country }
+                country={ country }
                 destination={ destination }
+                photo={ photo }
               />
             </div>
           );

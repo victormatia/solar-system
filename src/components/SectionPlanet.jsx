@@ -5,7 +5,7 @@ import planets from '../data/planets';
 class SectionPlanet extends React.Component {
   render() {
     return (
-      <section>
+      <section className="section-planet">
         {planets.map((planet, i) => {
           const { name, image } = planet;
           return (
